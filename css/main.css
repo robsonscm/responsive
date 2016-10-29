@@ -1,0 +1,205 @@
+/**************************************************
+Fonts
+Droid Serif
+Droid Sans
+Droid Sans Mono
+
+Font Scaling
+6.854rem
+4.236rem
+2.618rem
+1.618rem
+1.0rem
+0.618rem
+
+Colour scheme
+
+**************************************************/
+/*@import 'https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Droid+Serif';*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Montserrat','Oswald', 'Helvetica', 'Tahoma', sans-serif;
+    color: #004D5E;
+}
+/*************************** 
+DEFAULTS - MOBILE FIRST 
+***************************/
+h1{
+    font: bold 10vw 'Taviraj', 'Book Antiqua', 'Palatino', serif;
+}
+h2{
+    font: bold 2.4rem 'Taviraj', 'Book Antiqua', 'Palatino', serif;
+}
+li, p, a{
+    font: 1em 'Montserrat','Oswald', 'Helvetica', 'Tahoma', sans-serif;
+}
+pre, code, kbd{
+    font: normal 1.0em 'Taviraj', 'Book Antiqua', 'Palatino', serif;
+}
+/***************************
+    LAYOUT - MOBILE FIRST
+***************************/
+body{
+    width: 37.5em;
+    max-width: 96%;
+    min-width: 20em;
+    background: #004D5E;
+    padding: 2%;
+}
+.wrapper{
+    width: 96%;
+    margin: auto;
+    background: #A7EFFF;
+    word-wrap: break-word;
+    border-radius: 10px;
+}
+.masthead{
+    position: relative;
+    overflow: hidden;
+    border-bottom: 10px solid #004D5E;
+    height: 35vw;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+    .masthead h1{
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        text-shadow: 0 1px 0 #ccc,
+                    0 2px 0 #c9c9c9,
+                    0 3px 0 #bbb,
+                    0 4px 0 #b9b9b9,
+                    0 5px 0 #aaa,
+                    0 6px 1px rgba(0,0,0,.1),
+                    0 0 5px rgba(0,0,0,.1),
+                    0 1px 3px rgba(0,0,0,.3),
+                    0 3px 5px rgba(0,0,0,.2),
+                    0 5px 10px rgba(0,0,0,.25),
+                    0 10px 10px rgba(0,0,0,.2),
+                    0 20px 20px rgba(0,0,0,.15);
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+    }
+    .masthead img{
+        background: url(../img/responsive-banner.png) center center no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+    }
+nav{
+    width: auto;
+    padding-top: 1em;
+}
+    nav>ul{
+        width: 50%;
+        min-width: 10%;
+        max-width: 50%;
+        margin: 0 auto  ;
+        border: 5px solid #004D5E;
+        background: #00D0FF;
+        border-radius: 10px;
+    }
+        nav li{
+            list-style: none;
+            margin: 0 auto;
+            border-bottom: 5px solid #004D5E;
+        }
+        nav li:last-child{
+            border-bottom: none;
+        }
+            nav a,
+            nav a:link,
+            nav a:visited{
+                display: inline-block;
+                font: bold 1.5em 'Oswald', 'Montserrat', 'Helvetica', 'Tahoma', sans-serif;
+                width: 100%;
+                text-decoration: none;
+                text-align: center;
+                color: #004D5E;
+            }
+            nav a:active,
+            nav a:focus,
+            nav a:hover{
+                background: #FF7800;
+            }
+main{
+    width: 100%;
+    padding: 1em;
+}
+.col{
+    float: none;
+    width: 100%;
+    padding: 2em 0;
+}
+    .col h2 {
+        line-height: 1em;
+        padding: 0 0 .5em 0;
+        color: #703500;
+    }
+    .col img{
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        background-color: azure;
+        display: block;
+        clear: both;
+    }
+    .col p span {
+        display: block;
+        clear: both;
+    }
+    .col p {
+        text-indent: 3em;
+        text-align: justify;
+    }
+        .col>p:first-of-type::first-letter,
+        .col span:first-of-type::first-letter{
+            font-size: 1.5em;
+        }
+footer{
+    width: 100%;
+    border-top: 3px solid #004D5E;
+    text-align: center;
+}
+    footer p {
+        font-size: .8em;
+    }
+    footer ul li {
+        width: 33.33%;
+        height: 3em;
+        display: inline;
+        padding: 0.2em 2em;
+        list-style-type: none;
+    }
+        footer li a,
+        footer li a:link,
+        footer li a:visited {
+            display: inline;
+            width: 100%;
+            color: #FF7800;
+            font-size: .8em;
+            text-decoration: none;
+            /*text-shadow: 0 0 2px #004D5E;*/
+        }
+
+@media screen and (min-width:600px){
+    
+}
+@media screen and (min-width: 800px){
+    
+}
+@media screen and (min-width: 1200px){
+    
+}
