@@ -48,19 +48,20 @@ pre, code, kbd{
 ***************************/
 body{
     width: 37.5em;
-    max-width: 96%;
+    max-width: 100%;
     min-width: 20em;
     background: #004D5E;
     padding: 2%;
 }
 .wrapper{
-    width: 96%;
+    width: 95%;
     margin: auto;
     background: #A7EFFF;
     word-wrap: break-word;
     border-radius: 10px;
 }
 .masthead{
+    width: 100%;
     position: relative;
     overflow: hidden;
     border-bottom: 10px solid #004D5E;
@@ -69,8 +70,10 @@ body{
     border-top-left-radius: 10px;
 }
     .masthead h1{
+        background: transparent;
         position: relative;
         z-index: 2;
+        color: #FFF;
         text-align: center;
         text-shadow: 0 1px 0 #ccc,
                     0 2px 0 #c9c9c9,
@@ -89,21 +92,25 @@ body{
         height: 100%;
     }
     .masthead img{
-        background: url(../img/responsive-banner.png) center center no-repeat;
+        /*background: url(../img/responsive-banner.png) center center no-repeat;*/
+        /*background: url("https://placeimg.com/640/480/tech");*/
+        background-image: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+        ),url("http://lorempixel.com/600/200/technics");
         background-size: cover;
         position: absolute;
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
-        opacity: 0.3;
+        /*opacity: 0.6;*/
     }
 nav{
-    width: auto;
+    width: 100%;
     padding-top: 1em;
 }
     nav>ul{
-        width: 50%;
         min-width: 10%;
         max-width: 50%;
         margin: 0 auto  ;
@@ -122,9 +129,9 @@ nav{
             nav a,
             nav a:link,
             nav a:visited{
-                display: inline-block;
-                font: bold 1.5em 'Oswald', 'Montserrat', 'Helvetica', 'Tahoma', sans-serif;
                 width: 100%;
+                display: inline-block;
+                font: bold 1.5em 'Montserrat','Oswald', 'Helvetica', 'Tahoma', sans-serif;
                 text-decoration: none;
                 text-align: center;
                 color: #004D5E;
@@ -137,10 +144,12 @@ nav{
 main{
     width: 100%;
     padding: 1em;
+    margin: 0 auto;
+    /*border: 1px solid red;*/
 }
 .col{
-    float: none;
     width: 100%;
+    float: none;
     padding: 2em 0;
 }
     .col h2 {
@@ -149,10 +158,12 @@ main{
         color: #703500;
     }
     .col img{
+        /*background: url("http://lorempixel.com/640/480/technics");*/
+        /*background: url("https://placeimg.com/640/480/tech");*/
         width: 100%;
         height: auto;
         max-width: 100%;
-        background-color: azure;
+        background-color: grey;
         display: block;
         clear: both;
     }
@@ -163,6 +174,7 @@ main{
     .col p {
         text-indent: 3em;
         text-align: justify;
+        padding-bottom: 1em;
     }
         .col>p:first-of-type::first-letter,
         .col span:first-of-type::first-letter{
@@ -172,6 +184,7 @@ footer{
     width: 100%;
     border-top: 3px solid #004D5E;
     text-align: center;
+    clear:both;
 }
     footer p {
         font-size: .8em;
@@ -191,15 +204,154 @@ footer{
             color: #FF7800;
             font-size: .8em;
             text-decoration: none;
-            /*text-shadow: 0 0 2px #004D5E;*/
         }
 
 @media screen and (min-width:600px){
-    
+    body {
+        width: 50em;
+        min-width: 37.5em;
+    }
+    main{
+        width: 90%;
+        padding: 1em 0;
+        overflow: hidden;
+    }
+    .masthead{
+        height: 15vw;
+    }
+        .masthead h1{
+            font-size: 8vw;
+        }
+    nav{
+        padding-top: 0;
+        width: 90%;
+        clear: both;
+        margin: 0 auto;
+        border: #004D5E solid 3px;
+        border-top: none;
+    }
+        nav>ul{
+            border: none;
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            border-radius: 0;
+            text-align: center;
+        }
+            nav li{
+                /*1234*/
+                width: 19%;
+                display: inline-block;
+                clear: both;
+                border: none;
+                font-size: 1.8vw;
+                list-style-type: none;
+                /*text-align: center;*/
+            }
+                nav a,
+                nav a:link,
+                nav a:visited{
+                    text-decoration: none;
+                    /*text-align: center;*/
+                    color: #004D5E;
+                    display: inline;
+                    padding: 0 1.01em;
+                }
+    .col{
+        width: 50%;
+        display: inline-block;
+        float: left;
+        padding: 0 1em 2em 1em;
+    }
+        .col img{
+            width: 50%;
+            float: left;
+            margin: 0 .5em 0 0;
+        }
+        .col p span {
+            display: inline;
+            clear: none;
+        }
+        .col.first p:first-of-type {
+            text-indent: 1.5em;
+        }
 }
 @media screen and (min-width: 800px){
-    
+    body {
+        width: 75em;
+        min-width: 50em;
+    }
+    main{
+        width: 90%;
+    }
+    nav{
+        padding-top: 1em;
+        width: 90%;
+        clear: both;
+        margin: 0 auto;
+        border: none;
+    }
+        nav>ul{
+            border: none;
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            border-radius: 0;
+            background: transparent;
+            padding: 0;
+        }
+            nav li{
+                /*1234*/
+                width: 19%;
+                font-size: .9em;
+                list-style-type: none;
+                text-align: left;
+            }
+                nav a,
+                nav a:link,
+                nav a:visited{
+                    padding: 0 1em;
+                    color: #004D5E;
+                }
 }
 @media screen and (min-width: 1200px){
-    
+    body {
+        width: 100%;
+        min-width: 75em;
+    }
+    main{
+        width: 70%;
+        float: right;
+    }
+    nav{
+        width: 30%;
+        float: left;
+        clear: both;
+    }
+        nav>ul{
+            margin: 0 auto;
+            border: none;
+            width: 100%;
+        }
+            nav li{
+                width: 100%;
+                font-size: 1.6em;
+                list-style-type: none;
+                text-align: left;
+                padding: 0 2em 0 4vw;
+                /*border: 1px solid darkred;*/
+            }
+                nav a,
+                nav a:link,
+                nav a:visited{
+                    display: block;
+                    text-align: left;
+                    padding: 0 0 0 .5vw;
+                    /*border: 1px solid blue;*/
+                }
+    .col img{
+        width: 55%;
+    }
+}
+
 }
