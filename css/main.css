@@ -321,13 +321,13 @@ footer{
     main{
         width: 70%;
         float: right;
-        padding-top: 2em;
+        padding-top: 1.3em;
     }
     nav{
         width: 30%;
         float: left;
         clear: both;
-        padding-top: 2em;
+        padding-top: 1.3em;
         /*border: 1px solid yellow;*/
     }
         nav>ul{
@@ -357,4 +357,31 @@ footer{
     .col img{
         width: 55%;
     }
+    footer {
+        width: 100%;
+        overflow: hidden;
+        /*border: 1px solid red;*/
+    }
+        footer p{
+            width: 20%;
+            float: left;
+            padding-top: .2em;
+        }
+        footer ul {
+            width: 80%;
+            float: right;
+            display: inline;
+            text-align: right;
+        }
+        footer ul li {
+            width: 33.33%;
+            display: inline;
+            padding: 0 2em;
+        }
+    footer p {
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+
 }
