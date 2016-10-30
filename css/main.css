@@ -312,11 +312,11 @@ footer{
         width: 100%;
     }
     .masthead{
-        height: 11em;
+        height: 10em;
     }
         .masthead h1{
             font-size: 6em;
-            line-height: 1.6em;
+            line-height: 1em;
         }
     main{
         width: 70%;
