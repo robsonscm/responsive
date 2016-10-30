@@ -51,7 +51,7 @@ body{
     max-width: 100%;
     min-width: 20em;
     background: #004D5E;
-    padding: 2%;
+    padding: 1em;
 }
 .wrapper{
     width: 95%;
@@ -65,47 +65,32 @@ body{
     position: relative;
     overflow: hidden;
     border-bottom: 10px solid #004D5E;
-    height: 35vw;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    height: 29vw;
+    /*border-top-right-radius: 10px;*/
+    /*border-top-left-radius: 10px;*/
 }
     .masthead h1{
+        width: 100%;
+        height: 100%;
         background: transparent;
         position: relative;
         z-index: 2;
-        color: #FFF;
         text-align: center;
-        text-shadow: 0 1px 0 #ccc,
-                    0 2px 0 #c9c9c9,
-                    0 3px 0 #bbb,
-                    0 4px 0 #b9b9b9,
-                    0 5px 0 #aaa,
-                    0 6px 1px rgba(0,0,0,.1),
-                    0 0 5px rgba(0,0,0,.1),
-                    0 1px 3px rgba(0,0,0,.3),
-                    0 3px 5px rgba(0,0,0,.2),
-                    0 5px 10px rgba(0,0,0,.25),
-                    0 10px 10px rgba(0,0,0,.2),
-                    0 20px 20px rgba(0,0,0,.15);
-        vertical-align: middle;
-        width: 100%;
-        height: 100%;
+        color: #e0eff2;
+        text-shadow: -4px 3px 0 #3a50d9, -14px 7px 0 #0a0e27;
+        line-height: 12vw;
     }
     .masthead img{
         /*background: url(../img/responsive-banner.png) center center no-repeat;*/
         /*background: url("https://placeimg.com/640/480/tech");*/
-        background-image: linear-gradient(
-                rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.5)
-        ),url("http://lorempixel.com/600/200/technics");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("http://lorempixel.com/600/200/technics");
         background-size: cover;
         position: absolute;
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
-        /*opacity: 0.6;*/
-    }
+        }
 nav{
     width: 100%;
     padding-top: 1em;
@@ -114,14 +99,14 @@ nav{
         min-width: 10%;
         max-width: 50%;
         margin: 0 auto  ;
-        border: 5px solid #004D5E;
+        border: 3px solid #004D5E;
         background: #00D0FF;
         border-radius: 10px;
     }
         nav li{
             list-style: none;
             margin: 0 auto;
-            border-bottom: 5px solid #004D5E;
+            border-bottom: 3px solid #004D5E;
         }
         nav li:last-child{
             border-bottom: none;
@@ -131,7 +116,8 @@ nav{
             nav a:visited{
                 width: 100%;
                 display: inline-block;
-                font: bold 1.5em 'Montserrat','Oswald', 'Helvetica', 'Tahoma', sans-serif;
+                font-size: 1.5em;
+                /*font: bold 1.5em 'Montserrat','Oswald', 'Helvetica', 'Tahoma', sans-serif;*/
                 text-decoration: none;
                 text-align: center;
                 color: #004D5E;
@@ -239,23 +225,17 @@ footer{
             text-align: center;
         }
             nav li{
-                /*1234*/
-                width: 19%;
-                display: inline-block;
-                clear: both;
+                display: inline;
                 border: none;
-                font-size: 1.8vw;
+                font-size: 1.5vw;
                 list-style-type: none;
-                /*text-align: center;*/
             }
                 nav a,
                 nav a:link,
                 nav a:visited{
-                    text-decoration: none;
-                    /*text-align: center;*/
-                    color: #004D5E;
+                    width: 20%;
                     display: inline;
-                    padding: 0 1.01em;
+                    padding: 0 1.5em;
                 }
     .col{
         width: 50%;
@@ -280,78 +260,101 @@ footer{
     body {
         width: 75em;
         min-width: 50em;
+        padding: 0;
+    }
+    .masthead{
+        padding-top: .8em;
     }
     main{
         width: 90%;
+        /*padding: 0;*/
+        /*border: 10px solid yellowgreen;*/
     }
     nav{
-        padding-top: 1em;
+        padding-top: 0;
         width: 90%;
         clear: both;
         margin: 0 auto;
         border: none;
     }
         nav>ul{
-            border: none;
             width: 100%;
             min-width: 100%;
             max-width: 100%;
-            border-radius: 0;
             background: transparent;
-            padding: 0;
+            border: none;
+            border-radius: 0;
+            text-align: left;
+            margin: 2em 0 1em 1em;
         }
             nav li{
-                /*1234*/
-                width: 19%;
-                font-size: .9em;
+                display: inline;
+                border: none;
+                width: 20%;
+                font-size: 2.2vw;
                 list-style-type: none;
-                text-align: left;
             }
                 nav a,
                 nav a:link,
                 nav a:visited{
-                    padding: 0 1em;
-                    color: #004D5E;
+                    padding: 0 .8em 0 .2em;
+                    text-shadow: 2px 2px 1px #FF7800;
+                    border-radius: 5px;
                 }
 }
 @media screen and (min-width: 1200px){
     body {
         width: 100%;
         min-width: 75em;
+        /*border: 1px solid red;*/
     }
+    .wrapper {
+        width: 100%;
+    }
+    .masthead{
+        height: 11em;
+    }
+        .masthead h1{
+            font-size: 6em;
+            line-height: 1.6em;
+        }
     main{
         width: 70%;
         float: right;
+        padding-top: 2em;
     }
     nav{
         width: 30%;
         float: left;
         clear: both;
+        padding-top: 2em;
+        /*border: 1px solid yellow;*/
     }
         nav>ul{
             margin: 0 auto;
             border: none;
             width: 100%;
+            /*border: 1px solid deeppink;*/
+            overflow: hidden;
         }
             nav li{
+                display: inline-block;
                 width: 100%;
                 font-size: 1.6em;
                 list-style-type: none;
                 text-align: left;
-                padding: 0 2em 0 4vw;
-                /*border: 1px solid darkred;*/
+                padding: 0 2em 0 6vw;
+                /*border: 1px solid greenyellow;*/
             }
                 nav a,
                 nav a:link,
                 nav a:visited{
+                    width: 100%;
                     display: block;
                     text-align: left;
-                    padding: 0 0 0 .5vw;
                     /*border: 1px solid blue;*/
                 }
     .col img{
         width: 55%;
     }
-}
-
 }
