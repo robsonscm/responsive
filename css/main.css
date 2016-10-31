@@ -83,8 +83,9 @@ body{
     .masthead img{
         /*background: url(../img/responsive-banner.png) center center no-repeat;*/
         /*background: url("https://placeimg.com/640/480/tech");*/
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("http://lorempixel.com/600/200/technics");
-        background-size: cover;
+        /*background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("http://lorempixel.com/600/200/technics");*/
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("https://unsplash.it/3670/2462?image=20");
+        background-size: contain;
         position: absolute;
         left: 0;
         top: 0;
@@ -252,9 +253,9 @@ footer{
             display: inline;
             clear: none;
         }
-        .col.first p:first-of-type {
-            text-indent: 1.5em;
-        }
+        /*.col.first p:first-of-type {*/
+            /*text-indent: 1.5em;*/
+        /*}*/
 }
 @media screen and (min-width: 800px){
     body {
