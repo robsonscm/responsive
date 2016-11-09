@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Responsive Web Page</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Oswald|Taviraj" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" />
@@ -28,10 +28,11 @@
                 <h2> Web Development Troubleshooting</h2>
                 <h3>Steps Summary</h3>
                 <p>
-                    <!--<img src="https://placeimg.com/640/480/tech" alt="Workstation" />-->
-                    <!--<img src="http://lorempixel.com/640/480/technics" alt="Workstation" />-->
-                    <!--<img src="http://loremflickr.com/600/480/programing" alt="Web design image" />-->
-                    <img src="https://unsplash.it/640/480?image=180" alt="Workstation" />
+                    <picture>
+                        <source srcset="https://unsplash.it/640/480?image=180">
+                        <source srcset="https://placeimg.com/640/480/tech">
+                        <img src="http://placehold.it/640x480" alt="Workstation">
+                    </picture>
                     <span>This is mainly about how to solve technical problems that arise from using front or back end technologies to make web pages or web apps but some of these steps will be applicable to solving technical problems in general.</span>
                 </p>
                 <p>1. Define the problem that you're trying to solve. If you're not asking exactly the right question then you're not going to get exactly the right answer.</p>
@@ -49,7 +50,10 @@
             </section>
         </main>
         <footer class="footer" role="contentinfo">
-            <p>&copy; 2016 Turkey Stuff Inc.</p>
+            <p>&copy;
+                <time datetime="2016">2016 </time>
+                Robson Miranda
+            </p>
             <ul>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Careers</a></li>

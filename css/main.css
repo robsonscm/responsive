@@ -35,10 +35,10 @@ h1{
     font: bold 10vw 'Taviraj', 'Book Antiqua', 'Palatino', serif;
 }
 h2{
-    font: bold 2.4rem 'Taviraj', 'Book Antiqua', 'Palatino', serif;
+    font: bold 8vw 'Taviraj', 'Book Antiqua', 'Palatino', serif;
 }
 li, p, a{
-    font: 1em 'Montserrat','Oswald', 'Helvetica', 'Tahoma', sans-serif;
+    font: 5vw 'Montserrat','Oswald', 'Helvetica', 'Tahoma', sans-serif;
 }
 pre, code, kbd{
     font: normal 1.0em 'Taviraj', 'Book Antiqua', 'Palatino', serif;
@@ -57,7 +57,6 @@ body{
     width: 95%;
     margin: auto;
     background: #A7EFFF;
-    word-wrap: break-word;
     border-radius: 10px;
 }
 .masthead{
@@ -77,13 +76,12 @@ body{
         z-index: 2;
         text-align: center;
         color: #e0eff2;
-        text-shadow: -4px 3px 0 #3a50d9, -14px 7px 0 #0a0e27;
+        text-shadow: -4px 3px 0 #3a50d9, -8px 7px 0 #0a0e27;
         line-height: 12vw;
     }
     .masthead img{
-        /*background: url(../img/responsive-banner.png) center center no-repeat;*/
-        /*background: url("https://placeimg.com/640/480/tech");*/
-        /*background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("http://lorempixel.com/600/200/technics");*/
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("https://placeimg.com/640/480/tech");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../img/responsive-banner.png);
         background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("https://unsplash.it/3670/2462?image=20");
         background-size: contain;
         position: absolute;
@@ -117,7 +115,7 @@ nav{
             nav a:visited{
                 width: 100%;
                 display: inline-block;
-                font-size: 1.5em;
+                font-size: 4.5vw;
                 /*font: bold 1.5em 'Montserrat','Oswald', 'Helvetica', 'Tahoma', sans-serif;*/
                 text-decoration: none;
                 text-align: center;
@@ -174,7 +172,7 @@ footer{
     clear:both;
 }
     footer p {
-        font-size: .8em;
+        font-size: 1.2em;
     }
     footer ul li {
         width: 33.33%;
@@ -189,11 +187,17 @@ footer{
             display: inline;
             width: 100%;
             color: #FF7800;
-            font-size: .8em;
+            font-size: .7em;
             text-decoration: none;
         }
 
 @media screen and (min-width:600px){
+    h2 {
+        font-size: 5.5vw;
+    }
+    p {
+        font-size: 3vw;
+    }
     body {
         width: 50em;
         min-width: 37.5em;
@@ -219,30 +223,37 @@ footer{
     }
         nav>ul{
             border: none;
+            padding: 0;
             width: 100%;
             min-width: 100%;
             max-width: 100%;
             border-radius: 0;
             text-align: center;
+            /*border: 1px solid purple;*/
         }
             nav li{
                 display: inline;
                 border: none;
-                font-size: 1.5vw;
                 list-style-type: none;
+                overflow: hidden;
+                font-size: 2.3vw;
+                /*border: 1px solid red;*/
             }
                 nav a,
                 nav a:link,
                 nav a:visited{
+                    font-size: 2.5vw;
                     width: 20%;
                     display: inline;
-                    padding: 0 1.5em;
+                    padding: 0 1em;
+                    /*border: 1px solid greenyellow;*/
                 }
     .col{
         width: 50%;
         display: inline-block;
         float: left;
         padding: 0 1em 2em 1em;
+        word-wrap: break-word;
     }
         .col img{
             width: 50%;
@@ -253,11 +264,19 @@ footer{
             display: inline;
             clear: none;
         }
-        /*.col.first p:first-of-type {*/
-            /*text-indent: 1.5em;*/
-        /*}*/
+    footer li a,
+    footer li a:link,
+    footer li a:visited {
+        font-size: .7em;
+    }
 }
 @media screen and (min-width: 800px){
+    h2 {
+        font-size: 4vw;
+    }
+    p {
+        font-size: 1.8vw;
+    }
     body {
         width: 75em;
         min-width: 50em;
@@ -292,18 +311,29 @@ footer{
                 display: inline;
                 border: none;
                 width: 20%;
-                font-size: 2.2vw;
                 list-style-type: none;
             }
                 nav a,
                 nav a:link,
                 nav a:visited{
+                    font-size: 3vw;
                     padding: 0 .8em 0 .2em;
                     text-shadow: 2px 2px 1px #FF7800;
                     border-radius: 5px;
                 }
+    footer li a,
+    footer li a:link,
+    footer li a:visited {
+        font-size: .7em;
+    }
 }
 @media screen and (min-width: 1200px){
+    h2 {
+        font-size: 2.5vw;
+    }
+    p {
+        font-size: 1vw;
+    }
     body {
         width: 100%;
         min-width: 75em;
@@ -341,7 +371,6 @@ footer{
             nav li{
                 display: inline-block;
                 width: 100%;
-                font-size: 1.6em;
                 list-style-type: none;
                 text-align: left;
                 padding: 0 2em 0 6vw;
@@ -353,8 +382,12 @@ footer{
                     width: 100%;
                     display: block;
                     text-align: left;
+                    font-size: 1em;
                     /*border: 1px solid blue;*/
                 }
+    .col {
+        padding-bottom: .5em;
+    }
     .col img{
         width: 55%;
     }
@@ -383,6 +416,10 @@ footer{
         font-size: 1em;
         line-height: 1.5em;
     }
-
-
+    footer li,
+    footer li a,
+    footer li a:link,
+    footer li a:visited {
+        font-size: 1em;
+    }
 }
